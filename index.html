@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>VitalCare - Home</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/logo-nav.jpg" alt="Logo da Clinica" width="40" height="30"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Serviços
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Especialidades</a></li>
+                  <li><a class="dropdown-item" href="#">Serviços</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Convênios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#form__contato" tabindex="-1" aria-disabled="false">Contato</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="O que procura ?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Procurar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <header>
+        <h1 class="texto__header">Marque hoje a sua consulta !</h1>
+        <button class="botao__header">Agende Já</button>
+    </header>
+    <main>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/car-1.webp" class="d-block w-100" alt="Recepção clinica">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/car-2.jpg" class="d-block w-100" alt="Atendimento Médico">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/car-3.jpg" class="d-block w-100" alt="Tecnologia tratamentos médicos">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      <div class="funcionamento" id="horario__func">
+        <h3>Horário de Funcionamento</h3>
+        <p>Segunda: 6:00 - 18:00</p>
+        <p>Terça: 6:00 - 18:00</p>
+        <p>Quarta: 6:00 - 18:00</p>
+        <p>Quinta: 6:00 - 18:00</p>
+        <p>Sexta: 6:00 - 18:00</p>
+        <p>Sábado: 8:00 - 14:00</p>
+      </div>
+      <div class="map" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18196.886837201408!2d21.239508203131496!3d45.74622488705821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47455d8b0a904b29%3A0x6ca911618f3a352f!2sProfilaxis!5e0!3m2!1spt-BR!2sbr!4v1688563569307!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </main>
+    <div class="page__end">
+      <h1>Contato</h1>
+  
+      <footer>
+        <div class="footer-content" id="form__contato">
+          <form action="/enviar_email" method="POST">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" placeholder="Digite o seu nome"  name="nome" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Digite o seu e-mail para contato" name="email" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="assunto">Assunto:</label>
+              <input type="text" id="assunto" placeholder="Assunto da mensagem" name="assunto" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Digite aqui a sua mensagem" required></textarea>
+            </div>
+  
+            <button class="send__button" type="submit">Enviar</button>
+          </form>
+  
+          <div class="footer-links">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" aria-labelledby="staticBackdropLabel">
+              Termos de Uso
+            </a>
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              Perguntas Frequentes
+            </a>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalPolitica" aria-controls="modalPolitica">
+              Política de Privacidade
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel" class="perguntas__frequentes__off">Perguntas Frequentes</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" >
+                <div class="perguntas__frequentes__off">
+                  <p>
+                    1. P: Como posso agendar uma consulta?
+                    R: Agendar uma consulta é simples. Você pode ligar para o nosso número de atendimento ao paciente 4002-8922 ou usar nosso sistema de agendamento online em nosso <a href="#">site</a>
+                  </p>
+                  <p>
+                    2. P: Quais especialidades médicas vocês oferecem?
+                    R: Nossa clínica oferece uma variedade de especialidades médicas, incluindo cardiologia, pediatria, ginecologia, ortopedia, dermatologia, entre outras. Para obter a lista completa de nossos serviços, visite a página de "Especialidades" em nosso site.
+                  </p>
+                  <p>
+                    3. P: Quanto tempo dura uma consulta médica padrão?
+                    R: O tempo médio de uma consulta pode variar dependendo da especialidade e da condição do paciente. Geralmente, uma consulta padrão dura em torno de 15 a 30 minutos. Casos mais complexos podem exigir um tempo maior, e algumas consultas de acompanhamento podem ser mais curtas.
+                  <p>
+                    4. P: Vocês aceitam planos de saúde?
+                    R: Sim, aceitamos a maioria dos planos de saúde. Recomendamos que você entre em contato com nossa equipe de atendimento ao paciente ou verifique em nosso site a lista de planos de saúde que são aceitos.
+                  </p>
+                  <p>
+                    5. P: Quais métodos de pagamento vocês aceitam?
+                    R: Aceitamos pagamentos em dinheiro, cartões de débito e crédito das principais bandeiras, além de pagamentos por meio de aplicativos de pagamento eletrônico.
+                  </p>
+                  <p>
+                    6. P: Posso fazer exames laboratoriais na clínica?
+                    R: Sim, oferecemos serviços de exames laboratoriais em nossa clínica. Nossos médicos podem solicitar os exames necessários durante sua consulta e, em seguida, você poderá realizá-los conosco para maior conveniência.
+                  </p>
+                  <p>
+                    7. P: É necessário agendar exames com antecedência?
+                    R: Sim, para garantir o melhor atendimento, recomendamos que você agende seus exames com antecedência. Isso nos permite preparar os materiais necessários e evitar longos tempos de espera.
+                  </p>
+                  <p>
+                    8. P: Como posso obter os resultados dos meus exames?
+                    R: Os resultados dos exames estarão disponíveis em nossa clínica. Você pode retirá-los pessoalmente ou solicitar que os enviemos por e-mail ou correio. Além disso, alguns exames estarão disponíveis para visualização em nossa plataforma online
+                  </p>
+                  <p>
+                    9. P: Vocês atendem casos de emergência?
+                    R: Sim, atendemos casos de emergência médica. Se você estiver enfrentando uma emergência, ligue imediatamente para o número de emergência local ou dirija-se à nossa clínica mais próxima.
+                  </p>
+                  <p>
+                    10. P: Vocês oferecem consultas por telemedicina?
+                    R: Sim, oferecemos consultas por telemedicina para determinadas especialidades e situações. Entre em contato conosco para saber mais sobre as opções de telemedicina disponíveis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal" tabindex="-1" id="modalPolitica">
+              <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title box__politica">Política de Privacidade</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body box__politica">
+                    <p>A Clínica Médica VitalCare está comprometida em proteger a privacidade e os dados pessoais de nossos pacientes e visitantes do site. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais. Ao utilizar nosso site, você concorda com os termos desta política.</p>
+                    <p>
+                      Política de Privacidade da Clínica Médica Vital Care<br>
+                      
+                      Data de vigência: 25/08/2016<br>
+                      
+                      A Clínica Médica Vital Care está comprometida em proteger a privacidade e os dados pessoais de nossos pacientes e visitantes do site. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações pessoais. Ao utilizar nosso site, você concorda com os termos desta política.<br>
+                      
+                      1. Informações que coletamos:
+                      
+                      Ao navegar em nosso site, podemos coletar informações pessoais que você fornece voluntariamente ao preencher formulários de contato, fazer agendamentos de consultas ou fornecer detalhes durante a inscrição em nossa plataforma de telemedicina. As informações que podemos coletar incluem, mas não estão limitadas a:
+                      
+                      Nome completo
+                      Endereço de e-mail
+                      Número de telefone
+                      Data de nascimento
+                      Informações de seguro de saúde
+                      Informações relevantes para a prestação de serviços médicos
+                    </p>
+                    <p>
+                      2. Uso das informações:
+
+                      As informações coletadas são utilizadas para fornecer os serviços solicitados por você, como agendar consultas, enviar confirmações, fornecer informações sobre nossos serviços e responder a perguntas ou solicitações enviadas por meio do formulário de contato. Além disso, podemos usar suas informações para enviar comunicações promocionais relacionadas à nossa clínica e serviços, mas você pode optar por não recebê-las a qualquer momento.</p>
+                    <p>
+                      3. Proteção das informações:
+
+                      Nossa clínica adota medidas de segurança técnicas e organizacionais para proteger suas informações pessoais contra acesso não autorizado, uso indevido, alteração ou destruição. Utilizamos criptografia e práticas de segurança avançadas para garantir a confidencialidade das informações.</p>
+                    <p>
+                      4. Compartilhamento de informações:
+
+                      Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros não relacionados, exceto quando exigido por lei ou para fornecer serviços que você tenha solicitado. Podemos compartilhar suas informações com prestadores de serviços terceirizados que trabalham em nosso nome para fornecer determinados serviços, como processamento de pagamentos, análises de dados e suporte ao cliente.
+                    </p>
+                    <p>
+                      5. Cookies e tecnologias semelhantes:
+
+                      Nosso site pode utilizar cookies e tecnologias similares para melhorar a experiência do usuário e coletar informações sobre o uso do site. Você pode ajustar as configurações do navegador para recusar cookies, mas isso pode afetar o funcionamento adequado do site.
+                    </p>
+                    <p>
+                      6. Links para sites de terceiros:
+
+                      Nosso site pode conter links para sites de terceiros. Não nos responsabilizamos pelas práticas de privacidade desses sites e recomendamos que você revise as políticas de privacidade deles ao visitar seus sites.
+                    </p>
+                    <p>
+                      7. Menores de idade:
+
+                      Nossos serviços não se destinam a menores de 18 anos. Não coletamos intencionalmente informações pessoais de menores de idade. Se você acredita que seu filho nos forneceu informações pessoais, entre em contato conosco e tomaremos as medidas necessárias para excluir essas informações de nossos registros.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title therms" id="staticBackdropLabel">Termos de Uso</h5>
+                  </div>
+                  <div class="modal-body therms">
+                    <p>Bem-vindo ao site da Clínica Médica Vital Care. Ao acessar e utilizar nosso site, você concorda com os seguintes termos. Leia atentamente antes de prosseguir. Se você não concorda com qualquer parte destes termos, pedimos que não utilize nosso site.
+
+                      O site da Clínica Médica Vital Care tem o objetivo de fornecer informações sobre nossos serviços médicos, especialidades, equipe médica, notícias e informações relacionadas à saúde. Todo o conteúdo presente no site é apenas para fins informativos e educacionais e não deve ser considerado como substituto para consultas médicas profissionais, diagnósticos ou tratamentos.
+                      
+                      Todo o conteúdo, logotipos, marcas registradas, imagens, vídeos, textos e outros materiais presentes em nosso site são de propriedade exclusiva da Clínica Médica Vital Care ou de terceiros com os quais temos acordos de licenciamento. É proibida a reprodução, distribuição, modificação ou utilização não autorizada de qualquer conteúdo presente em nosso site sem nossa autorização por escrito.
+                      
+                      Ao utilizar nosso site, você concorda em não fornecer informações falsas, imprecisas ou enganosas, além de não utilizar o site para fins ilegais ou não autorizados. É proibido tentar violar a segurança do site ou de nossos sistemas, interferir no funcionamento adequado do site ou prejudicar a experiência de outros usuários. O envio de conteúdo difamatório, obsceno, ofensivo, ilegal ou prejudicial também é estritamente proibido.
+                      
+                      Nosso site pode conter links para sites de terceiros. Esses links são fornecidos apenas para sua conveniência, e não somos responsáveis pelo conteúdo ou pelas práticas de privacidade desses sites. Recomendamos que você revise os termos de uso e a política de privacidade desses sites antes de utilizá-los.
+                      
+                      Reservamos o direito de atualizar, modificar ou encerrar qualquer parte de nosso site, incluindo estes Termos de Uso, a qualquer momento, sem aviso prévio. É sua responsabilidade revisar periodicamente esta página para estar ciente de quaisquer alterações. O uso contínuo do site após qualquer alteração significa que você concorda com os novos termos.
+                      
+                      Nosso site é fornecido "como está", e não fazemos representações ou garantias sobre sua precisão, confiabilidade ou adequação a qualquer propósito específico. Não seremos responsáveis por quaisquer danos diretos, indiretos, incidentais, consequenciais ou punitivos decorrentes do uso ou incapacidade de uso de nosso site.
+                      
+                      Estes Termos de Uso serão regidos e interpretados de acordo com as leis do Brasil, independentemente de seus conflitos de princípios legais. Em caso de litígio relacionado ao site ou a estes termos, as partes concordam em submeter-se à jurisdição exclusiva dos tribunais competentes do Brasil.
+                      
+                      Se você tiver alguma dúvida ou preocupação sobre estes Termos de Uso ou o uso de nosso site, entre em contato conosco pelo e-mail ouvidoria@vitalcare.com .
+                      
+                      Ao utilizar nosso site, você concorda com estes Termos de Uso. Agradecemos por visitar a Clínica Médica Vital Care online.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendi !</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="app.js"></script>
+</html>

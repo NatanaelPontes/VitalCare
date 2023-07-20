@@ -1,0 +1,237 @@
+:root {
+    --corFontePrincipal: aliceblue;
+    --corFonteSecundaria: #666ead;
+}
+
+.texto__header{
+    margin: 10%;
+    color: var(--corFontePrincipal);
+}
+
+
+body {
+    background-image: url("assets/background-header.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Jost', sans-serif;
+    color: var(--corFontePrincipal);;
+  }
+
+
+
+.botao__header {
+    margin-left: 10%;
+    margin-bottom: 2em;
+    height: 2.8em;
+    width: 9em;
+    background: transparent;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    border: 2px solid #1daf83f1;
+    outline: none;
+    color: #ffffff;
+    font-size: 17px;
+   }
+   
+   .botao__header:hover {
+    background: #1daf83f1;
+    color: #ffffff;
+    animation: squeeze3124 0.9s both;
+   }
+   
+   @keyframes squeeze3124 {
+    0% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   
+    30% {
+     -webkit-transform: scale3d(1.25, 0.75, 1);
+     transform: scale3d(1.25, 0.75, 1);
+    }
+   
+    40% {
+     -webkit-transform: scale3d(0.75, 1.25, 1);
+     transform: scale3d(0.75, 1.25, 1);
+    }
+   
+    50% {
+     -webkit-transform: scale3d(1.15, 0.85, 1);
+     transform: scale3d(1.15, 0.85, 1);
+    }
+   
+    65% {
+     -webkit-transform: scale3d(0.95, 1.05, 1);
+     transform: scale3d(0.95, 1.05, 1);
+    }
+   
+    75% {
+     -webkit-transform: scale3d(1.05, 0.95, 1);
+     transform: scale3d(1.05, 0.95, 1);
+    }
+   
+    100% {
+     -webkit-transform: scale3d(1, 1, 1);
+     transform: scale3d(1, 1, 1);
+    }
+   }
+
+   
+.map {
+    width: 80%;
+    margin: 5% auto;
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.funcionamento{
+    margin-top: 5em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--corFontePrincipal);;
+}
+
+.page__end{
+    max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+}
+
+footer {
+    padding: 20px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+
+  
+  .footer-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .send__button {
+      margin-left: 33%;
+      margin-bottom: 2em;
+      height: 2.8em;
+      width: 9em;
+      background: transparent;
+      -webkit-animation: jello-horizontal 0.9s both;
+      animation: jello-horizontal 0.9s both;
+      border: 2px solid #1daf83f1;
+      outline: none;
+      color: #ffffff;
+      font-size: 17px;
+     }
+     
+     .send__button:hover {
+      background: #1daf83f1;
+      color: #ffffff;
+      animation: squeeze3124 0.9s both;
+     }
+     
+     @keyframes squeeze3124 {
+      0% {
+       -webkit-transform: scale3d(1, 1, 1);
+       transform: scale3d(1, 1, 1);
+      }
+     
+      30% {
+       -webkit-transform: scale3d(1.25, 0.75, 1);
+       transform: scale3d(1.25, 0.75, 1);
+      }
+     
+      40% {
+       -webkit-transform: scale3d(0.75, 1.25, 1);
+       transform: scale3d(0.75, 1.25, 1);
+      }
+     
+      50% {
+       -webkit-transform: scale3d(1.15, 0.85, 1);
+       transform: scale3d(1.15, 0.85, 1);
+      }
+     
+      65% {
+       -webkit-transform: scale3d(0.95, 1.05, 1);
+       transform: scale3d(0.95, 1.05, 1);
+      }
+     
+      75% {
+       -webkit-transform: scale3d(1.05, 0.95, 1);
+       transform: scale3d(1.05, 0.95, 1);
+      }
+     
+      100% {
+       -webkit-transform: scale3d(1, 1, 1);
+       transform: scale3d(1, 1, 1);
+      }
+     }
+
+.perguntas__frequentes__off {
+  color: black;
+}
+
+.perguntas__frequentes__off a {
+  color: black;
+  text-decoration: none;
+}
+
+.perguntas__frequentes__off a:hover {
+  color: green;
+  font-weight: 600;
+}
+
+.box__politica {
+  color: black;
+  font-weight: 500;
+}
+
+.therms{
+  color: black;
+  font-weight: 500;
+}
